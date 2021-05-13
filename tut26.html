@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*CSS reset*/
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('bg.jpg');
+        }
+        .left{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: inline-block;
+            border: 2px solid red;
+        }
+        .mid{
+            display: block;
+            margin: 10px auto; /*x axis y axis */
+            width: 40%;
+            border: 2px solid red;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 2px solid red;
+        }
+        .navbar li{
+            list-style: none;
+            display:inline-block;
+            box-sizing: border-box;
+            padding: 8px;
+            margin: 8px;
+            font-size: 20px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            I am left
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            I am Right
+        </div>
+    </header>
+</body>
+</html>

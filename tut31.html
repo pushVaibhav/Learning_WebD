@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: cornflowerblue;
+            color: darkblue;
+            text-align: center;
+            font-weight: bold;
+        }
+        /*div p{
+            color: darkgray;
+            font-weight: bold;
+            background-color: rgb(54, 85, 42);
+        }*/
+
+
+        /*div > p{ /* greater than is used to target the just next element 
+            color: rgb(155, 10, 10);
+            font-weight: bold;
+            background-color: rgb(123, 102, 182);
+        } */
+
+        /*if p is the next sibling of div we used +(plus)*/
+        div + p {
+            color: blanchedalmond;
+            background-color: rgb(92, 30, 133);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+    <div class="row">
+        <ul>
+            <li class="item"><p>This is another paragraph inside li</p></li>
+            <li>This is a para</li>
+        </ul>
+        <p>This is a paragraph</p>
+    </div>
+    <p>This is another paragraph</p>
+</div>
+<p>This is outermost paragraph</p>
+</body>
+</html>

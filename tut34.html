@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 20px;
+            /* border: 3px solid red; */
+            background-color: sandybrown;
+
+             /*box shadow: (x axis) (y axis) (edges blurring of shadow) (spread) */
+            box-shadow: 10px 10px 38px 30px rgb(36, 36, 175, 0.9);
+            box-shadow: 10px 30px yellow; /*box shadow: (x axis) (y axis)*/
+            box-shadow: 10px 10px 38px blue; /*box shadow: (x axis) (y axis) (edges blurring of shadow) */
+
+            box-shadow: inset 10px 10px blue;
+        }
+        .card h2{
+            text-align: center;
+            text-shadow: 4px 4px 7px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+           <h2>This is C++ course</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci corporis facilis laboriosam libero eveniet assumenda ut voluptates quas rem blanditiis asperiores, ex, officiis porro repellat inventore minus beatae? Vero quam impedit ipsum! Placeat?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quasi natus, voluptatum accusantium qui nisi perferendis iste totam nesciunt dolorem molestias aut quibusdam vitae! Dolorum molestiae qui, accusantium impedit sapiente hic laudantium incidunt ipsa?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos voluptates et asperiores distinctio, obcaecati, expedita fugit iste inventore voluptatibus in ducimus nisi incidunt porro repellendus totam facilis dolorem unde. Dolorem soluta culpa minima.</p>
+        </div>
+    </div>
+</body>
+</html>

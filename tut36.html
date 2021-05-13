@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: chartreuse;
+        }
+        .box{
+            background-color: cornflowerblue;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            animation-name: harry;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in;  */
+            /* animation-timing-function: ease-out; */
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 2s; */
+            /* animation-direction: reverse; */
+
+            /* format to write properties in one line */
+            /* animation: ani-name ani-duration ani-timing-func ani-delay ani-iteration-count ani-fill-mode; */
+            animation: harry 4s ease-in-out 2s 3 backwards;
+        }
+        @keyframes harry{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        @keyframes harry1{
+            from{
+                width: 100px;
+            }
+            to{
+                width: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

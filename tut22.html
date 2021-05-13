@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo selectors and more designing</title>
+    <style>
+        /* you can apply different properties to different classes and id's */
+        .container{
+            border: 8px solid rgb(170, 32, 32);
+            border-radius: 8px;
+            background-color: rgb(5, 71, 71);
+            padding: 45px;
+            margin: 16px  auto;
+            width: 55%;
+        }
+        .btn{
+            background-color: chocolate;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        a{
+            text-decoration: none; /*removes the underline in anchor tag*/
+            color: black;
+        }
+
+        a:hover{
+            /* it works when you point your cursor on the tag */
+            background-color: darkgray;
+        }
+
+        a:visited{
+            /* this property gets applied when you visited that given link */
+            background-color: white;
+        }
+
+        a:active{
+            /* it works when you click on the given link  */
+            background-color: yellow;
+        }
+
+        .btn:hover{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quaerat nisi architecto velit? Error nulla asperiores neque fuga eos cupiditate laudantium officiis debitis nisi! Vel nulla sint tempore fugiat id, voluptas eveniet voluptatum cum.</p>
+        <a href="https://facebook.com" target="_blank" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+    </body>
+</html>

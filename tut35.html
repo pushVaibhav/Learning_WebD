@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables and Custom Properties</title>
+    <style>
+        :root{
+            --maxw: 333px;
+            --primary-color: blue;
+            --danger-color: rgb(56, 1, 10); 
+        }
+        .box{
+            /* --box-color: blue ; variable created */
+            border: 4px solid var(--danger-color);
+            margin: 16px;
+            padding: 8px;
+            width: 200px;
+            height: 150px;
+            background-color: var(--primary-color); /*variable implemented*/ 
+            box-shadow: 5px 5px  var(--primary-color);
+        }
+        .container{
+            /* either you can declare another variable or create a root box as a global variable */
+            background-color: var(--box-color);/*it cannot be implemented here cause it is a kind of local variable*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--maxw);
+            background-color: var(--danger-color);
+            margin:auto;
+            padding: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

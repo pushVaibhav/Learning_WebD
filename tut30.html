@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 52px;
+            text-align: center;
+            background-color:  rgb(2, 197, 187);
+            color: rgb(22, 148, 43);
+            display: none;
+        }
+        @media (max-width:500px){ /*element will appear till 500px*/
+            #box1{ 
+                display: block;
+                background-color: brown;
+            }
+        }
+        @media (max-width:500px) and (min-width:300px){/*element will appear till 500px and 300px*/ 
+            #box2{ 
+                background-color: chartreuse;
+                display: block;
+            }
+        }
+        @media (max-width:800px) and (min-width:500px){
+            #box3{
+                display: block;
+                background-color: yellow;
+            }
+        }
+        @media (min-width:800px){
+            #box4{
+                display: block;
+                background-color: rgb(16, 103, 153);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mai ek iphone hu</div>
+    <div class="box" id="box2">Mai ek tablet hu</div>
+    <div class="box" id="box3">Mai ek computer hu</div>
+    <div class="box" id="box4">Mai ek widescreen computer hu</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 3px solid black;
+            background-color: gray;
+            border-radius: 10px ;
+            margin: auto;
+            width: 1200px;
+        }
+        img{
+            /* block makes an element a block  */
+            display: block;
+            margin: auto;
+            width: 75px;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+        .box{
+            /* inline block makes an element inline and block  */
+            display: inline-block;            
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(209, 201, 91);
+            margin: 5px 0px ;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            width: 33%;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://codewithharry.com/static/home/img/photo.png" alt="Remote image">
+        <h3>Welcome to Harry's blog</h3>
+    </header>
+        <div class="container">
+            <div class="box">
+                <h4>Heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit libero, ullam vero impedit harum in laboriosam qui iure placeat perspiciatis molestias tenetur. Quae molestiae itaque numquam maiores voluptatum praesentium quas iure labore aut tempora.</p>
+            </div>
+            <div class="box">
+                <h4>Heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit libero, ullam vero impedit harum in laboriosam qui iure placeat perspiciatis molestias tenetur. Quae molestiae itaque numquam maiores voluptatum praesentium quas iure labore aut tempora.</p>
+            </div>
+            <div class="box">
+                <h4>Heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sit libero, ullam vero impedit harum in laboriosam qui iure placeat perspiciatis molestias tenetur. Quae molestiae itaque numquam maiores voluptatum praesentium quas iure labore aut tempora.</p>
+            </div>
+        </div>
+</body>
+</html>

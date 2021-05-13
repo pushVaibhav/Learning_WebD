@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model </title>
+    <style>
+         *{
+            /* default setting of elements if you want to */
+            box-sizing: border-box;
+            margin: 16px;
+            padding: 16px;
+        } 
+        .container{
+            /* margin >> border >> padding */
+            background-color: cornflowerblue;
+            border: 8px solid rgb(15, 42, 116);
+
+            /* padding can be set from left right top and bottom according to want */
+            /* padding: 16px;*/
+
+            padding: 16px 16px 16px 16px; /*padding = top right bottom left(trbl)*/
+
+            /* padding: 16px 16px; padding: y(top/bottom) x(left/right) ;  */
+
+            /* margin can also be set from left right top and bottom */
+            margin: 16px;      
+
+            border-radius: 14px;
+            /* width: 600px;
+            height: 200px; */
+            /* box-sizing: border-box; use it to get box size fixed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, excepturi consectetur error tempora aliquid labore laboriosam veritatis obcaecati aliquam nulla aut alias quod?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, excepturi consectetur error tempora aliquid labore laboriosam veritatis obcaecati aliquam nulla aut alias quod?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, excepturi consectetur error tempora aliquid labore laboriosam veritatis obcaecati aliquam nulla aut alias quod?</p>
+    </div>
+
+</body>
+</html>
